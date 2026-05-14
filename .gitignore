@@ -1,3 +1,5 @@
 node_modules/
-backend/src/main/resources/application.properties
 *.log
+.env.local
+.env
+backend/target/

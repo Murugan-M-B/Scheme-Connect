@@ -1,6 +1,8 @@
 // ─── src/api/service.js ───────────────────────────────────────────────────────
 
-const BASE_URL = 'http://localhost:8080/api/v1';
+// In production, set VITE_API_URL in your Vercel environment variables to your Render backend URL
+// e.g. https://scheme-connect-backend.onrender.com/api/v1
+const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api/v1';
 
 export const ApiService = {
 
